@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio</title>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  /* Light Mode */
+  --mainTextColor-light: #000;
+  --secondaryTextColor-light: (51 51 51);
+  --mainLinkColor-light: #0da2b8;
+  --mainBorderColor-light: rgb(218, 218, 218);
+  --mainBgColor-light: rgb(249, 250, 251);
+
+  /* Dark Mode */
+  --mainTextColor-dark: #fff;
+  --secondaryTextColor-dark: #adb0b1;
+  --mainLinkColor-dark: rgb(30, 190, 214);
+  --mainBorderColor-dark: #2b3031;
+  --mainBgColor-dark: #131415;
+
+  /* Normal Mode */
+  --mainTextColor: var(--mainTextColor-light);
+  --secondaryTextColor: var(--secondaryTextColor-light);
+  --mainLinkColor: var(--mainLinkColor-light);
+  --mainBorderColor: var(--mainBorderColor-light);
+  --mainBgColor: var(--mainBgColor-light);
+}
+
+* {
+  font-family: 'Readex Pro', sans-serif;
+  line-height: 1.5em;
+  box-sizing: border-box;
+  color: var(--mainTextColor);
+}
+
+body {
+  background-color: var(--mainBgColor);
+}
+
+p, span, li {
+  color: var(--secondaryTextColor);
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainLinkColor);
+  font-size: 500;
+}
+
+li {
+  line-height: 1.9em;
+}
+
+
+
+#container--main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section--page {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+
+/* Profile - Perfil */
+#wrapper--hero {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+
+/* Nome perfil */
+#user-name {
+  font-size: 2em;
+  line-height: 1em;
+  
+}
+
+/* Bio perfil  */
+#bio, a {
+  font-weight: 300;
+  text-align: justify;
+  line-height: none;
+  letter-spacing: -1px;
+}
+
+/* Imagem do perfil */
+#profile-pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-style: outset;
+  border-color: rgba(255, 68, 0, 0.322);
+}
+
+#email {
+  color: var(--mainTextColor);
+}
+
+#socials--list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 1em;
+  flex-wrap: wrap;
+}
+
+#socials--list a {
+  font-size: 0.9em;
+  color: var(--secondaryTextColor);
+  transition: 0.5s;
+}
+
+#socials--list a:hover {
+  color: var(--mainLinkColor);
+}
+
+
+/* Habilidades e qualificações */
+
+#qualifications--list {
+  list-style: none;
+  list-style-position: outside;
+}
+
+/* Linguagens e compiladores */
+
+#wrapper--techstack__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 0.9em;
+}
+
+.card--techstack {
+  border: 1px solid var(--mainBorderColor);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
+
+/* Minha história */
+
+.card--work-history {
+  border-left: 1px solid var(--mainBorderColor);
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding-left: 2em;
+}
+
+/* Quebra de linha  */
+.line-break {
+  background-color: var(--mainBorderColor);
+  height: 1px;
+}
+
+/* Projetos */
+
+.card--project {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-top: 1px solid var(--mainBorderColor);
+}
+
+.card--project a {
+  color: var(--mainTextColor);
+  transition: 0.5s;
+}
+
+.card--project a:hover {
+  color: var(--mainLinkColor);
+}
+
+
+/* Layout */
+@media(max-width:600px) {
+  #wrapper--hero{
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  #profile-pic {
+    width: 200px;
+    height: 200px;
+  }
+
+  .section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+
+  .card--work-history {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+</style>
+</head>
+<body>
+  <div id="container--main">
+
+    <section id="wrapper--hero" class="section--page">
+      <img id="profile-pic" src="https://media-exp1.licdn.com/dms/image/D4D03AQEBtKb7ZgersA/profile-displayphoto-shrink_200_200/0/1666398330588?e=1672272000&v=beta&t=cis0tD3rE7WAbK6QiG2QAGVUUPCbQPGH11uSkX86nFc" alt="imagem de perfil">
+
+      <div>
+
+        <h1 id="user-name">Pedro Augusto Lima Carvalho</h1>
+
+        <p id="bio">Meu nome é Pedro Augusto, tenho 20 anos e atualmente trabalho como analista QA e estou em busca de mais conhecimento para o avanço da minha carreira como desenvolvedor web.
+          Atualmente estou cursando Análise e Desenvolvimento de Sistesmas pela universidade UniSant'anna.</p>
+          <p id="email">💻 Desenvolvedor Web Estudante 💻</p>
+          <p id="email">📧 E-mail: vedb91@gmail.com 📧 </p>
+
+      </div>
+
+    </section>
+
+    <div><h3>Mídias sociais</h3></div>
+    <section class="section--page">
+      <div id="socials--list">
+        <a href="https://github.com/BDevOne" target="_blank">Github</a>
+        <a href="https://www.instagram.com/p.augusto_123_/" target="_blank">Instagram</a>
+        <a href="https://www.linkedin.com/in/pedro-augusto-900717247/" target="_blank">Linkedin</a>
+        <a href="https://twitter.com/BveD15" target="_blank">Twitter</a>
+        <!-- <a href="#" target="_blank">Telegram</a> -->
+      </div>
+    </section>
+
+    <div class="line-break"></div>
+
+    <section class="section--page">
+      <h2>Habilidades e qualificações</h2>
+      
+      <ul>
+        <li>✔️ Cursando Análise e Desenvolvimento de Sistemas</li>
+        <li>✔️ Curso de JavaScript</li>
+        <li>✔️ Estudando HTML, CSS, JavaScript e C#</li>
+        <!-- <li>✔️ ####################################</li> -->
+      </ul>
+    </section>
+
+    <div class="line-break"></div>
+
+    <section class="section--page">
+
+      <h2>Linguagens e compiladores</h2>
+
+      <div id="wrapper--techstack__items">
+
+        <div class="card--techstack"><span>JavaScript</span></div>
+        <div class="card--techstack"><span>HTML5 </span></div>
+        <div class="card--techstack"><span>CSS</span></div>
+        <div class="card--techstack"><span>C#</span></div>
+        <div class="card--techstack"><span>Visual Studio Code</span></div>
+        <div class="card--techstack"><span>Visual Studio</span></div>
+
+      </div>
+    </section>
+
+    <div class="line-break"></div>
+
+    <section id="work--history-wrapper" class="section-page">
+      
+      <h2>Início da minha história</h2>
+
+      <div class="line-break"></div>
+      <div class="card--work-history">
+          <strong>🏆 WOOBA SISTEMAS DE INFORMATICA LTDA</strong>
+          <p>07/2021 - Present</p>
+          <p></p>
+          <ul>
+              <li>Atualmente sou funcionário da WOOBA SISTEMAS DE INFORMATICA como Analista de teste.</li>
+              <li>Conheci a programação através da WOOBA e me apaixonei por desenvolvimento web.</li>
+              <li>Hoje curso Análise e Desenvolvimento de Sistemas e estou buscando mais conhecimento na área de T.I utilizando das novas tecnolgias.</li>
+          </ul>
+      </div>
+
+      <!-- <div class="line-break"></div>
+
+      <div class="card--work-history">
+          <strong></strong>
+          <p></p>
+          <p></p>
+          <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+          </ul>
+      </div> -->
+
+    <seciton class="section--page">
+      <h2>Meus projetos</h2>
+      <p>Alguns dos meus projetos</p>
+
+      <div class="card--project">
+        <a href="https://github.com/BDevOne/felpscybernet-Trabalho-Filipe-pedro--nathan"><span>🚧 </span>Construindo um sistema de suporte a pessoas iniciantes na academia</a>
+      </div>
+
+      <div class="card--project">
+        <a href="https://github.com/BDevOne/Tela-login"><span>🏆 </span>Criação de uma tela de login utilizando HTML, CSS E JavaScript</a>
+      </div>
+
+      <div class="card--project">
+        <a href="https://github.com/BDevOne/Cadastro-de-Usuario"><span>🏆 </span>Projeto cadastro de usuário em C#</a>
+      </div>
+
+      <div class="card--project">
+        <a href="https://github.com/BDevOne/heroku.git"><span>🏆 </span>Projeto no heroku com redes sociais</a>
+      </div>
+    </seciton>
+
+  </div>
+</body>
+</html>
