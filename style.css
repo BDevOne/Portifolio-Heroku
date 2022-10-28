@@ -66,7 +66,7 @@ li {
 #wrapper--hero {
   display: flex;
   align-items: center;
-  gap: 4em;
+  gap: 2em;
 }
 
 /* Nome perfil */
@@ -82,6 +82,7 @@ li {
   text-align: justify;
   line-height: none;
   letter-spacing: -1px;
+  
 }
 
 /* Imagem do perfil */
