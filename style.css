@@ -80,6 +80,7 @@ li {
   line-height: 1em;
   opacity: 0;
   animation: fadeInText 0s 1.3s both;
+  margin-bottom: 10px;
 }
 
 .text-block {
@@ -134,7 +135,7 @@ li {
   text-align: justify;
   line-height: none;
   letter-spacing: -1px;
-  background: #e4e3e3bb;
+  background: #afafaf80;
   -webkit-box-shadow: 10px 8px 10px rgba(50, 50, 50, 0.77);
   -moz-box-shadow: 10px 8px 10px rgba(50, 50, 50, 0.77);
   box-shadow: 10px 8px 10px rgba(50, 50, 50, 0.77);
@@ -160,6 +161,8 @@ a {
 
 #email {
   color: var(--mainTextColor);
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #socials--list {
@@ -196,10 +199,49 @@ a {
   font-size: 0.9em;
 }
 
-.card--techstack {
+/* Layout da linguagens */
+/* Implementar cores */
+
+.card--techstack-js {
   border: 1px solid var(--mainBorderColor);
   padding: 0.5em 1em;
   border-radius: 5px;
+  /* background-color: rgba(255, 255, 0, 0.459); */
+}
+
+.card--techstack-html {
+  border: 1px solid var(--mainBorderColor);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  /* background-color: rgba(255, 68, 0, 0.521); */
+}
+
+.card--techstack-css {
+  border: 1px solid var(--mainBorderColor);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  /* background-color: rgba(0, 162, 255, 0.589); */
+}
+
+.card--techstack-csharp {
+  border: 1px solid var(--mainBorderColor);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  /* background-color: rgba(0, 128, 0, 0.589); */
+}
+
+.card--techstack-vsc {
+  border: 1px solid var(--mainBorderColor);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  /* background-color: rgba(0, 119, 255, 0.534); */
+}
+
+.card--techstack-vs {
+  border: 1px solid var(--mainBorderColor);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  /* background-color: rgba(201, 108, 255, 0.568); */
 }
 
 /* Minha história */
