@@ -135,9 +135,9 @@ li {
   line-height: none;
   letter-spacing: -1px;
   background: #e4e3e3bb;
-  -webkit-box-shadow: 10px 7px 5px rgba(50, 50, 50, 0.77);
-  -moz-box-shadow: 10px 7px 5px rgba(50, 50, 50, 0.77);
-  box-shadow: 10px 7px 5px rgba(50, 50, 50, 0.77);
+  -webkit-box-shadow: 10px 8px 10px rgba(50, 50, 50, 0.77);
+  -moz-box-shadow: 10px 8px 10px rgba(50, 50, 50, 0.77);
+  box-shadow: 10px 8px 10px rgba(50, 50, 50, 0.77);
   border-radius: 5px;
   padding: 0.2em;
   
@@ -206,7 +206,8 @@ a {
 
 .card--work-history {
   border-left: 1px solid var(--mainBorderColor);
-  margin-top: 3em;
+  border-right: 1px solid var(--mainBorderColor);
+  margin-top: 2em;
   margin-bottom: 3em;
   padding-left: 2em;
 }
